@@ -30,6 +30,14 @@ uvicorn src.main:app --reload
 После запуска можете переходить в любой удобный браузер по ссылке http://127.0.0.1:8000 и пользоваться сайтом
 
 > НЕЗАБУДЬТЕ НАСТРОИТЬ .env в корне проекта
-
-
+#### Пример .env
+```
+TOKEN_OPENAI_API=ВАШ_ТОКЕТ
+GITHUB_REDIRECT_URI=http://127.0.0.1:8000/github/callback
+SQLALCHEMY_DATABASE_URI=postgresql+asyncpg://login:pasw!@localhost/db_name
+SECRET_KEY=ВАШ_КЛЮЧ
+GITHUB_CLIENT_ID=ВАШ_ТОКЕТ
+GITHUB_CLIENT_SECRET=ВАШ_ТОКЕТ
+WEBHOOK_BASE_URL=http://127.0.0.1:8000/github/webhook
+```
 ## С примером документации можно ознакомится внутри директории ([пример](<ПРИМЕР СОЗДАЕМОЙ ДОКУМЕНТАЦИИ>))
